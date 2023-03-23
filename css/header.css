@@ -1,0 +1,58 @@
+.headerContainer{
+    width: 100%;
+    background-color: var(--cinzaEscuro);
+    border-bottom: 1px solid white;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkMenu{
+    display: none;
+}
+
+.logo{
+    width: 148px;
+    padding: 1em 0;
+    margin-right: 2em;
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/Menu\ Aberto.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.navbar{
+    display: none;
+    position: absolute;
+    top: 12%;
+    list-style: none;
+    width: 30vw;
+    background-color: var(--cinzaEscuro);
+    text-align: center;
+    padding: 0.2em 0.5em 0.5em;
+    right: 0px;
+    font-weight: bold;
+    
+}
+
+.navbar li{
+    margin-top: 10px;
+}
+
+.contactBtn{
+    padding: 0.2em 0.5em;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#menu_hamburguer:checked~.navbar{
+    display: block;
+}
