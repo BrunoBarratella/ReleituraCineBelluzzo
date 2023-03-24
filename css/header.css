@@ -1,26 +1,29 @@
-.headerContainer{
+.headerContainer {
     width: 100%;
     background-color: var(--cinzaEscuro);
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid rgb(105, 100, 100); */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 1;
 }
 
-.headerContent{
+.headerContent {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.checkMenu{
+.checkMenu {
     display: none;
 }
 
-.logo{
+.logo {
     width: 148px;
     padding: 1em 0;
     margin-right: 2em;
 }
 
-.menu{
+.menu {
     width: 30px;
     height: 30px;
     background-image: url("../img/Menu\ Aberto.svg");
@@ -29,30 +32,95 @@
     display: inline-block;
 }
 
-.navbar{
+.navbar {
     display: none;
-    position: absolute;
-    top: 12%;
-    list-style: none;
+}
+
+.navbar li {
+    color: white;
+    padding: 0.5em;
     width: 30vw;
-    background-color: var(--cinzaEscuro);
-    text-align: center;
-    padding: 0.2em 0.5em 0.5em;
-    right: 0px;
-    font-weight: bold;
-    
+    background: rgba(148, 143, 143, 0.349);
+    border-right: 1px solid rgb(168, 168, 168);
 }
 
-.navbar li{
+.navBorderTop {
     margin-top: 10px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
-.contactBtn{
+.navBorderBottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+
+.contactBtn {
     padding: 0.2em 0.5em;
     border-radius: 12px;
     margin-top: 10px;
 }
 
-#menu_hamburguer:checked~.navbar{
-    display: block;
+#menu_hamburguer:checked~.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30vw;
+    right: 0px;
+    position: fixed;
+    top: 95%;
+    list-style: none;
+    background-color: var(--cinzaEscuro);
+    padding: 0.2em 0.5em 0.5em;
+    border-bottom-left-radius: 12px;
+}
+
+@media screen and (min-width:995px) {
+    .headerContainer {
+        width: 100%;
+        background-color: var(--cinzaEscuro);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        z-index: 1;
+    }
+
+    .headerContent {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navbar {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        
+    }
+    .navbar li {
+        color: white;
+        padding: none;
+        width: 12vw;
+        background: none;
+        backdrop-filter: none;
+        border-right: none;
+        font-size: 20px;
+    }
+
+    .navBorderTop {
+        margin-top: 0px;
+    }
+    
+    .navBorderBottom {
+        border-bottom: 0px;
+    }
+
+    .contactBtn {
+        padding: 0.2em 2em;
+        margin-top: 0px;
+    }
+
+    .menu {
+        display: none;
+    }
 }
