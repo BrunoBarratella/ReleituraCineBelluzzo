@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Poppins:wght@100;300;400;500;700&display=swap');
 @import url("header.css");
 @import url("sessoes.css");
+@import url("filmes.css");
+@import url("bomboniere.css");
+
 :root{
     --cinzaEscuro: rgba(54, 49, 49, 0.404);
     --montserrat: 'Montserrat', sans-serif;
     --poppins: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 * {

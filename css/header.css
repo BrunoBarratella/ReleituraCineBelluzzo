@@ -34,6 +34,7 @@
 
 .navbar {
     display: none;
+
 }
 
 .navbar li {
@@ -42,6 +43,7 @@
     width: 30vw;
     background: rgba(148, 143, 143, 0.349);
     border-right: 1px solid rgb(168, 168, 168);
+
 }
 
 .navBorderTop {
@@ -76,8 +78,12 @@
     padding: 0.2em 0.5em 0.5em;
     border-bottom-left-radius: 12px;
 }
+.nav{
+    text-decoration: none;
+    color: white;
+}
 
-@media screen and (min-width:995px) {
+@media screen and (min-width:948px) {
     .headerContainer {
         width: 100%;
         background-color: var(--cinzaEscuro);
@@ -95,7 +101,7 @@
         display: flex;
         list-style: none;
         gap: 20px;
-        
+    
     }
     .navbar li {
         color: white;
@@ -105,6 +111,12 @@
         backdrop-filter: none;
         border-right: none;
         font-size: 20px;
+    
+    }
+
+    .nav{
+        text-decoration: none;
+        color: white;
     }
 
     .navBorderTop {
@@ -118,6 +130,7 @@
     .contactBtn {
         padding: 0.2em 2em;
         margin-top: 0px;
+        cursor: pointer;
     }
 
     .menu {
