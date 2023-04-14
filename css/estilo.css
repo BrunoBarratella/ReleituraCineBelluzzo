@@ -3,6 +3,7 @@
 @import url("sessoes.css");
 @import url("filmes.css");
 @import url("bomboniere.css");
+@import url("./descricaoFilme.css");
 
 :root{
     --cinzaEscuro: rgba(54, 49, 49, 0.404);
@@ -24,7 +25,6 @@ html{
 }
 
 body{
-    background-color: black;
     font-family: var(--montserrat);
 }
 

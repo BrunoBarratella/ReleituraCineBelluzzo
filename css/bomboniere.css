@@ -72,7 +72,7 @@
     justify-content: space-between;
 }
 
-@media screen and (min-width:948px) {
+@media screen and (min-width:900px) {
     .otherItens {
         display: flex;
     }

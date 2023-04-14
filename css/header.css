@@ -84,7 +84,7 @@
 }
 
 
-@media screen and (min-width:948px) {
+@media screen and (min-width:900px) {
     .headerContainer {
         width: 100%;
         background-color: var(--cinzaEscuro);
